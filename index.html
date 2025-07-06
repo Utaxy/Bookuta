@@ -15,17 +15,21 @@
         <div class="display-wrapper">
             <div class="display-books" id="display-books"></div>
         </div>
-        <div class="form-container" id="form-container"> 
+        <div class="form-container" id="form-container" style="display: none;"> 
             <form id="book-form">
-                <input type="text" id="title"placeholder="Book's name" required>
-                <input type="text" id="author"placeholder="Author" required>
-                <input type="number" id="pages"placeholder="Page" required>
-                <input type="checkbox" id="isRead" name="isRead">
-                <label for="isRead">Did you read ? </label>
-                <button id="submit">Submit</button>
-                <button id="cancel">Cancel</button>
-            </form>
+                <input type="text" id="title" placeholder="Book's name" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="pages" placeholder="Pages" required>
+                <div class="checkbox-wrapper">
+                    <label for="isRead">Did you read ? </label>
+                    <input type="checkbox" id="isRead" name="isRead">
+                </div>
+                <div class="button-wrapper1">
+                    <button type="submit"id="submit">Submit</button>
+                    <button type="cancel-button"id="cancel">Cancel</button>
+                </div>
         </div>
+        
     </div>
     
 </body>
